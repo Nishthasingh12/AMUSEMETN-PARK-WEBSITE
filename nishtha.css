@@ -1,0 +1,67 @@
+.search{
+    float:right;
+    color:rgb(179, 247, 253);
+    padding: 12px 75px;
+}.navbar {
+    background-color: cornflowerblue;
+    border-radius: 36px;
+}
+.navbar ul {
+    overflow: auto;
+
+}
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 13px 13px;
+}
+.navbar li a{
+    padding:10px 10px;
+    text-decoration: none;
+    color: black;
+}
+.navbar li a:hover{
+    color: red;
+}
+.navbar input{
+    border: 2px rgb(26, 1, 25);
+    border-radius: 10px;
+    padding: 3px  17px;
+    width: 150px;
+
+}
+
+.body {
+    background-color: rgb(179, 247, 253);
+}
+.h1 {
+    text-align: center;
+}
+
+.h3 {
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.p {
+    text-align: center;
+}
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.h2 {
+    text-align: center;
+}
+
+.p {
+    color: blueviolet;
+}

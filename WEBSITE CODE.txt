@@ -1,0 +1,696 @@
+NISHTHA.HTML CODE:-
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li class="active"><a href="nishtha.HTML">Home</a></li>
+                    <li> <a href="form.html">Tickets</a></li>
+                    <li> <a href="rides and slides.html">Rides and Slides</a></li>
+                    <li> <a href="TTD.HTML">Things to do</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+
+                    <div class="search">
+                        <input type="text" name="search" id="search" placeholder="search about us">
+                    </div>
+                    <style>
+                        .search{
+                            float:right;
+                            color:rgb(14, 11, 11);
+                            padding: 12px 75px;
+                        }
+                    </style>
+                </ul>
+            </nav>
+        </header>
+    </body>
+    <style>
+        .navbar {
+            background-color:whitesmoke;
+            border-radius: 36px;
+        
+        }
+        .navbar ul {
+            overflow: auto;
+    
+        }
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 13px;
+        }
+        .navbar li a{
+            padding:10px 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .navbar li a:hover{
+            color:rgb(189, 25, 25);
+            border: 1px solid;
+        }
+        .navbar input{
+            border: 2px rgb(26, 1, 25);
+            border-radius: 10px;
+            padding: 3px  17px;
+            width: 150px;
+        
+
+        }
+    </style>
+    
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    
+    <style>
+        body {
+            background-color: rgb(179, 247, 253);
+        }
+    </style>
+</head>
+<div class="logo">
+    <img src="logo.jpg" alt="logo">
+</div> <br><br><br>
+<div class="row">
+    <div class="col">
+        <h1>WELCOME TO OUR WEBSITE!</h1>
+        <P>MORE THAN JUST A ZIPLINE, THE ADVENTURE PARK IS A CHANCE TO BE A KID AGAIN. THIS ADVENTURE PARK IS DIFFERENT FROM TRADITIONAL ROPES AND ZIPLINES.
+            OUR PARK ARE FUN, EXHILIRATING AND REWARDING EXPERIENCE.
+        </P>
+    </div>
+    <div class="col">
+        <div class="card card1">
+            
+
+        </div>
+        <div class="card card2">
+           
+            
+        </div>
+        <div class="card card3">
+           
+            
+        </div>
+        <div class="card card4">
+            
+            
+        </div>
+        <div class="card card5">
+           
+            
+        </div>
+        <div class="card card6">
+           
+            
+        </div>
+    </div>
+
+       
+
+
+</body>
+
+</html>
+
+HOME.CSS CODE:-
+
+body
+{
+    background:  url(ybg.jpg);
+    background-size: cover;
+
+
+}
+    .row{
+       
+        display: flex;
+        height: 88%;
+        align-items: center;
+       
+       
+    }
+    .col{
+        flex-basis: 50%;
+    }
+    h1{
+        color: #fff;
+        font-size: 100px;
+    }
+    p{
+        color: #fff;
+        font-size: 11px;
+        line-height: 15px;
+    }
+    
+.logo img{
+    float: left;
+    width: 100px;
+    height: auto;
+
+    }
+    
+
+    ul li.active{
+        background-color: white;
+        color: #000;
+    }
+    .card{
+        width: 200px;
+        height: 230px;
+        border-radius: 10px;
+        display: inline-block;
+        padding: 12px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 15px;
+       
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.5s;
+    }
+    .card1{
+        background-image: url(1.jpg);
+    }
+    .card2{
+        background-image: url(2.webp);
+    }
+    .card3{
+        background-image: url(3.webp);
+    }
+    .card4{
+        background-image: url(4.jpg);
+    }
+    .card5{
+        background-image: url(5.jpg);
+    }
+    .card6{
+        background-image: url(6.jpg);
+    }
+    .card:hover{
+        transform:translateY(-10px) ;
+    }
+
+FORM.HTML:-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    
+<div class="main">
+    <div class="booking">
+        <h1>TICKET BOOKING</h1> <br><br>
+        <form id="booking" method="post" autocomplete="on">
+            <label for="fname">FIRST NAME :</label> 
+            <br> 
+            <input type="text" id="fname" name="fname" placeholder="Enter your name" > 
+            <br> <br>
+            <label for="lname">LAST NAME :</label>
+             <br>
+            <input type="text " id="lname" name="lname" placeholder="Enter your last name"> 
+            <br><br>
+            <label for="age">AGE :</label> 
+            <br>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" id="adult" name="adult"> 
+            <label for="adult">ADULT</label>  
+            <input type="radio" id="child" name="child"> 
+            <label for="child">CHILD</label> 
+            <br> <br> <br>
+            <label for="phone">PHONE NO :</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone no." pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> <br> <br>
+            <label for="email" >EMAIL :</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email"> <br><br>
+            <label for="date">CHOOSE DATE :</label>
+            <br>
+            <input type="date" id="date" name="date">
+            <br><br>
+            <button  id="proceed" type="button" onclick="alert(' INFORMATION SUBMITTED')">PROCEED</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
+
+FORM.CSS:-
+
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    
+    
+
+}
+body{
+    background:url(pink.jpg) ;
+    background-size: cover;
+    background-position: 0%;
+    
+
+
+}
+div.booking{
+    background-color: rgba(240, 9, 9, 0.5);
+    width: 150%;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 2px 2px 15px rgba(0,0,0,0,3);
+    color: #fff;
+}
+form#booking{
+    margin: 40px;
+    
+}
+label{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: italic;
+
+}
+div.main{
+    width: 400px;
+    margin: 100px auto 0px auto;
+
+
+}
+h1{
+    text-align: center;
+    padding: 20px;
+}
+input#name{
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0px;
+    padding: 1px;
+background-color: #fff;
+border-style: inset 1px 1px 5px rgba(0,0,0,0.3);
+}
+input#proceed{
+    width: 200px;
+    padding: 7px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 3px;
+    background: rgba(250,100,0,0.8);
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+
+}
+button{
+    width: 180px;
+ 
+    color: #000;
+    font-size: 12px;
+    background:#fff;
+    padding: 17px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+RIDES AND SLIDES.HTML:-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rides.css">
+</head>
+<style>
+    div{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap: wrap;
+    }
+    div img{
+        width: 400px;
+        height: 300px;
+        border: 3px solid #ff3d0036;
+        border-radius: 20px;
+        box-shadow: 4px 7px 7px 0px #00000042;
+        cursor: pointer;
+        margin: 20px;
+        transition: 400ms;
+    }
+    div img:hover{
+        filter: grayscale(1);
+        transform: scale(1.03);
+    }
+</style>
+<body>
+    <h1 style="color: rgb(249, 237, 246);" >RIDES AND SLIDES</h1> 
+    <div class="im">
+    
+    <img src="ride 2.jpg" alt="image 1" class="center"> 
+    <h2 style="color: black;"> "THE SKY SCREAMER"</h2> 
+    <img src="ride 3.jpg" alt="ride 2" class="center"> 
+    <h2 style="color: rgb(18, 1, 1);">"CARNIVAL RIDE"</h2> 
+    <img src="ride 4.jpg" alt="ride 3" class="center">
+    <h2 style="color: black;">" THE SCRAMBLER"</h2> <br><br>
+    <img src="FERRIS WHEEL.jpg" alt="ride 4" class="center">
+    <h2 style="color:black;">"THE FERRIS WHEEL"</h2> 
+    <img src="haunted.jpg" alt="ride 5" class=" center"> 
+    <h2 style="color: black;">"THE HAUNTED MANSION</h2> 
+    <img src="bc.jpg" alt="ride 5" class="center">
+    <h2 style="color:black;">"BUMPER CARS"</h2>
+</div>
+
+    
+</body>
+</html>
+
+RIDES.CSS:-
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background: url(ridebg.webp) ;
+    background-size: cover;
+
+}
+h2{
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    background-color:greenyellow(62, 172, 80);
+}
+
+TTD.HTML:-
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="TTD.CSS">
+</head>
+<body>
+    <h1>THINGS TO DO LIST</h1> <br><br>
+    <img src="https://media.istockphoto.com/photos/colored-kiosk-selling-popcorn-and-cotton-candy-picture-id1144140811?k=20&m=1144140811&s=612x612&w=0&h=vO6mt7QWuxpdIXF1wr3324-oo_-OliOG88Dtay1CABc="
+    alt="cotton candy stall"> <br><br>
+    <h2 style="text-align: center;">
+        MAKE YOUR OWN COTTON CANDY. <br>
+       " If lost, can be found at the cotton candy station."
+    </h2> <br><br>
+    <a href="" target="_blank"> <img src="food.jpg" alt="food image"></a> <br><br>
+    <h2 style="color: rgb(7, 4, 4);">ENJOY DIFEERENT INDIAN FOOD.   <br> "Wake up your taste buds."</h2> <br><br>
+   
+
+    <img src="https://images.wisetour.com/color-ferris-wheel.jpg" alt=" Ferris-Wheel"> <br><br>
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
+    
+        h2 {
+            text-align: center;
+        }
+    </style>
+    <h2>RIDE THE INDIA'S BEST RIDES AND SLIDES. <br>  "I'm on a roller coaster that only goes up, my friend!" </h2> <br><br>
+    <img src="MAGICSHOW.jpg" alt="MAGICSHOW"> <br><br>
+    <h2>ABRACADABRA. <br> "Catch a magic show."</h2> <br><br>
+
+    
+    
+    
+</body>
+</html>
+
+TTD.CSS:-
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    border-right: 40px;
+    border-left: 50px;
+    border-radius: 40px;
+    border-width: 1px;
+}
+
+body{
+    background: url(TTDBG.jpg);
+    background-size: cover;
+}
+h1{
+    color: rgb(244, 244, 250);
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+}
+.food{
+    align-items: center;
+}
+
+
+CONTACT.HTML:-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact us</h2>
+        </div>
+        <div class="container">
+            <div class="ContactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        
+                        <div class="text">
+                            <h3 >Address</h3>
+                            <p style="color: whitesmoke;">21, Near Panchayat Ghar <br>Mawana Khurd,Meerut <br>250401</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                            
+                            <div class="text">
+                                <h3 >Phone</h3>
+                                <p style="color: whitesmoke;"> +91-9027086376 <br>+91-7454925288</p>
+                </div>
+                        </div>
+            <div class="box">
+                <div class="icon"> <i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3 >Email</h3>
+                        <p style="color: whitesmoke;">nishtha.singh.cse.2021@gmail.miet.ac.in <br>nisha.rastogi.cse.2021@gmail.miet.ac.in</p>
+        </div>
+    </div>
+</div>
+<div class="contactform">
+    <form>
+        <h2>Send Message</h2>
+        <div class="inputbox">
+            <input type="text" name="" required="required">
+            <span>Full Name</span>
+        </div>
+        <div class="inputbox">
+            <input type="text" name="" required="required">
+            <span>Email</span>
+        </div>
+        <div class="inputbox">
+           <textarea required="required"></textarea>
+            <span >Type your Message....</span>
+        </div>
+        <div class="inputbox">
+            <input type="submit" name="" value="send">
+            
+        </div>
+    </form>
+</div>
+</div>
+    </section>
+</body>
+</html>
+
+CONTACT.CSS:-
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+.contact
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(contact.jpg);
+    background-size: cover;
+}
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+
+}
+.contact .content  p
+{
+    font-weight: 300;
+    color: #fff;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .ContactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .ContactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+}
+.container .ContactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .ContactInfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+
+} 
+.container .ContactInfo .box .text h3
+{
+    font-weight: 500;
+    color: #00bcd4;
+}
+.contactform
+{
+    width: 40%;
+    padding: 40px;
+    background-color: #fff;
+
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactform .inputbox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contact .inputbox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+
+

@@ -1,0 +1,75 @@
+body
+{
+    background:  url(ybg.jpg);
+    background-size: cover;
+
+
+}
+    .row{
+       
+        display: flex;
+        height: 88%;
+        align-items: center;
+       
+       
+    }
+    .col{
+        flex-basis: 50%;
+    }
+    h1{
+        color: #fff;
+        font-size: 100px;
+    }
+    p{
+        color: #fff;
+        font-size: 11px;
+        line-height: 15px;
+    }
+    
+.logo img{
+    float: left;
+    width: 100px;
+    height: auto;
+
+    }
+    
+
+    ul li.active{
+        background-color: white;
+        color: #000;
+    }
+    .card{
+        width: 200px;
+        height: 230px;
+        border-radius: 10px;
+        display: inline-block;
+        padding: 12px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 15px;
+       
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.5s;
+    }
+    .card1{
+        background-image: url(1.jpg);
+    }
+    .card2{
+        background-image: url(2.webp);
+    }
+    .card3{
+        background-image: url(3.webp);
+    }
+    .card4{
+        background-image: url(4.jpg);
+    }
+    .card5{
+        background-image: url(5.jpg);
+    }
+    .card6{
+        background-image: url(6.jpg);
+    }
+    .card:hover{
+        transform:translateY(-10px) ;
+    }
